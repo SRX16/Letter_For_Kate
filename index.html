@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>letter</title>
+    <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="envelope-wrapper">
+            <div class="envelope">
+                <div class="letter">
+                    <div class="text">
+                        <strong>Dear kate.</strong>
+                        <p>
+                            Hi, I know we just met recently but I just wanted to take a moment to say thank you. You've been there for me through all the random conversations, awkward overthinking, and late-night “what should I say next?” moments. Honestly, I don't know how you manage to deal with my weirdoness, but I’m really grateful to you.
+                        </p>
+                        <img src= "kate.gif" id="bg-gif" alt="Background GIF" />
+                    </div>
+                </div>
+            </div>
+            <div class="heart"></div>
+        </div>
+    </div>
+    <script>
+        const envelope = document.querySelector('.envelope-wrapper');
+        envelope.addEventListener('click', () => {
+            envelope.classList.toggle('flap');
+        });
+    </script>
+</body>
+</html>
